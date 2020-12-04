@@ -29,7 +29,7 @@ func main() {
 		c.String(http.StatusOK, fmt.Sprintf("'%s' uploaded!", file.Filename))
 	})
 
-	router.Run(":8087")
+	router.Run(":8091")
 }
 
 func posting(c *gin.Context) {
