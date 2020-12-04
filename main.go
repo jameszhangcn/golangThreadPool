@@ -40,6 +40,7 @@ func posting(c *gin.Context) {
 		"message": message,
 		"nick":    nick,
 	})
+	fmt.Println("posting");
 }
 func putting(c *gin.Context) {
 	message := c.PostForm("message")
@@ -49,6 +50,7 @@ func putting(c *gin.Context) {
 		"message": message,
 		"nick":    nick,
 	})
+	fmt.Println("putting");
 }
 func deleting(c *gin.Context) {
 	message := c.PostForm("message")
@@ -58,4 +60,5 @@ func deleting(c *gin.Context) {
 		"message": message,
 		"nick":    nick,
 	})
+	fmt.Println("deleting");
 }
