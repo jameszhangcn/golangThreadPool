@@ -28,7 +28,7 @@ func main() {
 		c.SaveUploadedFile(file, dst)
 		c.String(http.StatusOK, fmt.Sprintf("'%s' uploaded!", file.Filename))
 	})
-
+        fmt.Println("main start to listen");
 	router.Run(":8091")
 }
 
